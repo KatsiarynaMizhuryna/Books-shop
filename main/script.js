@@ -88,6 +88,13 @@ fetch("./books.json")
             bookPrice.classList.add('book-price')
             bookPrice.innerText = `price: ${item.price}$`
             bookCardItem.append(bookPrice)
+
+            const buttonDescription = document.createElement('button')
+            buttonDescription.classList.add('button-description')
+            buttonDescription.innerText = 'Description'
+            bookCardItem.append(buttonDescription)
+
+            
     })
 }
 
