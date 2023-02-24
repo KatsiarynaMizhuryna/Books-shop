@@ -3,6 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family:'Roboto bold';
+    font-family:'Roboto BoldItalic';
+    font-family:'Roboto Italic';
+    font-family:'Roboto Regular' ;
+    src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-BoldItalic.ttf);
+    src: url(../fonts/Roboto-Italic.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:'Lobster Regular' ;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family:'ShantellSans Bold' ;
+    font-family:'ShantellSans Regular' ;
+    src: url(../fonts/ShantellSans-Bold.ttf);
+    src: url(../fonts/ShantellSans-Regular.ttf);
+}
+
 :root {
     --color-text:#550D0E;
     --color-card:#E7D6AC;
@@ -20,7 +41,7 @@ body {
 }
 .header-style {
     width: 100%;
-    height: 100px;
+    height: 175px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,8 +49,8 @@ body {
     
 }
 .header-image {
-    width: 200px;
-    height: 100px;
+    width: 240px;
+    height: 170px;
     margin-left: 40px;
 }
 

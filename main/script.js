@@ -4,7 +4,7 @@ header.classList.add('header-style')
 document.body.appendChild(header)
 
 const image = document.createElement('img')
-image.src = '../assets/icons/background-books.png'
+image.src = '../assets/icons/header.png'
 image.classList.add('header-image')
 header.append(image);
 
