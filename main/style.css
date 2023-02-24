@@ -14,8 +14,12 @@
     src: url(../fonts/Roboto-Regular.ttf);
 }
 @font-face {
-    font-family:'Lobster Regular' ;
+    font-family:'Lobster Regular';
     src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family:'Pacifico Regular';
+    src: url(../fonts/Pacifico-Regular.ttf);
 }
 :root {
     --color-text:#550D0E;
@@ -24,6 +28,7 @@
     --color-div:#F9F4DB;
     --color-header:#fffcfc;
     --color-button:#a0c4b6;
+    --color-description:#4b2828;
    }
 body {
     background-color:var(--color-back);
@@ -116,6 +121,7 @@ body {
     flex-direction: column;
     column-gap: 10px;
     background-color: var(--color-header);
+    border: 3px solid var(--color-div)
 }
 .book-image {
     height: 300px;
@@ -134,7 +140,8 @@ body {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-
+    font-family: 'Pacifico Regular';
+    color: var(--color-description);
 }
 .button-description {
     border: none;
@@ -145,6 +152,7 @@ body {
     margin-right: 50px;
     margin-left: 50px;
     background-color: var(--color-header);
+    color: var(--color-description);
     cursor: pointer;
 }
 .button-add-to-basket {
