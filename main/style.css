@@ -29,6 +29,10 @@
     --color-header:#fffcfc;
     --color-button:#a0c4b6;
     --color-description:#4b2828;
+    --color-description-hover:#b18181;
+    --color-button-hover:#37926f;
+    --color-title:#8c3f2b;
+    --color-shadow:#e6c1c1;
    }
 body {
     background-color:var(--color-back);
@@ -37,7 +41,7 @@ body {
     margin: auto;
     font-family:'Roboto Regular' ;
     font-weight: 400;
-    font-size: medium;
+    font-size: 16px;
     line-height: 130%;
     letter-spacing: 0.06em;
     
@@ -76,6 +80,7 @@ body {
     border: none;
     outline: none;
 }
+
 .header-button-search {
     width: 40px;
     height: 40px;
@@ -123,6 +128,9 @@ body {
     background-color: var(--color-header);
     border: 3px solid var(--color-div)
 }
+.book-card-item:hover {
+    box-shadow:10px 5px 5px var(--color-shadow);
+}
 .book-image {
     height: 300px;
 }
@@ -130,10 +138,13 @@ body {
     height: 35px;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .book-title {
     height: 75px;
     text-align: center;
+    color: var(--color-title);
+
 }
 .book-price {
     height: 25px;
@@ -141,6 +152,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Pacifico Regular';
+    font-size: 20px;
     color: var(--color-description);
 }
 .button-description {
@@ -155,6 +167,9 @@ body {
     color: var(--color-description);
     cursor: pointer;
 }
+.button-description:hover {
+    color: var(--color-description-hover);
+}
 .button-add-to-basket {
     border: none;
     border-radius: 90px;
@@ -166,5 +181,8 @@ body {
     margin-bottom: 10px;
     background-color: var(--color-button);
     cursor: pointer;
+}
+.button-add-to-basket:hover {
+    background-color:var(--color-button-hover);
 }
 
