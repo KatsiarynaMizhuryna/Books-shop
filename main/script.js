@@ -5,26 +5,26 @@ document.body.appendChild(header)
 
 const image = document.createElement('img')
 image.src = '../assets/icons/background-books.png'
-image.classList.add('image-style')
+image.classList.add('header-image')
 header.append(image);
 
 const bookstore = document.createElement('div')
 bookstore.innerHTML = "The Book Store"
-bookstore.classList.add('bookstore-style')
+bookstore.classList.add('header-bookstore')
 header.append(bookstore);
 
 const search = document.createElement('div')
-search.classList.add('search-style')
+search.classList.add('header-search')
 header.append(search)
 
 const contacts = document.createElement('h3')
 contacts.innerHTML = 'Contacts'
-contacts.classList.add('contacts-style')
+contacts.classList.add('contacts-link')
 header.append(contacts)
 
 const delivery = document.createElement('h3')
 delivery.innerHTML = 'Delivery'
-delivery.classList.add('delivery-style')
+delivery.classList.add('delivery-link')
 header.append(delivery)
 
 const cart = document.createElement('img')
@@ -34,11 +34,11 @@ header.append(cart)
 
 const inputSearch = document.createElement('input')
 inputSearch.placeholder = "    Search ..."
-inputSearch.classList.add('inputSearch-style')
+inputSearch.classList.add('input-search')
 search.append(inputSearch)
 
 const buttonSearch = document.createElement('button')
-buttonSearch.classList.add('buttonSearch-style')
+buttonSearch.classList.add('header-button-search')
 search.append(buttonSearch)
 
 // main
@@ -93,8 +93,6 @@ fetch("./books.json")
             buttonDescription.classList.add('button-description')
             buttonDescription.innerText = 'Description'
             bookCardItem.append(buttonDescription)
-
-            
     })
 }
 
