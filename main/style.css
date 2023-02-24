@@ -8,7 +8,8 @@
     --color-card:#E7D6AC;
     --color-back:#FFF7EC;
     --color-div:#F9F4DB;
-    --color-header:#f5f3f3;
+    --color-header:#fffcfc;
+    --color-button:#a0c4b6;
    }
 body {
     background-color:var(--color-back);
@@ -26,31 +27,31 @@ body {
     background-color: var(--color-header);
     
 }
-.image-style {
+.header-image {
     width: 200px;
     height: 100px;
     margin-left: 40px;
 }
 
-.bookstore-style {
+.header-bookstore {
     text-align: center;
     color: var(--color-text);
     font-size: 52px;
     font-weight: 400;
 }
-.search-style {
+.header-search {
     display: flex;
     align-items: center;
     margin-right: 40px;
     
 }
-.inputSearch-style {
+.input-search {
     width: 300px;
     height: 40px;
     border: none;
     outline: none;
 }
-.buttonSearch-style {
+.header-button-search {
     width: 40px;
     height: 40px;
     border: none;
@@ -61,18 +62,18 @@ body {
     background-size: cover;
     cursor: pointer;
 }
-.cart-style {
+.cart-link {
     width: 40px;
     height: 40px;
     cursor: pointer;
     margin-right: 40px;
 }
-.delivery-style  {
+.delivery-link  {
     cursor: pointer;
     color: var(--color-text);
     letter-spacing: 0.05em;
 }
-.contacts-style {
+.contacts-link {
     cursor: pointer;
     color: var(--color-text);
     letter-spacing: 0.05em;
@@ -80,7 +81,62 @@ body {
 .bookCards-style { 
     width: auto;
     min-height: 790px;
-    margin:0 40px;
+    margin: 40px 40px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
     flex-wrap: wrap;
 }
+
+.book-card-item {
+    width: 250px;
+    /*min-height: 400px;*/
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    background-color: var(--color-header);
+}
+.book-image {
+    height: 300px;
+}
+.book-autor {
+    height: 35px;
+    text-align: center;
+    margin-top: 10px;
+}
+.book-title {
+    height: 75px;
+    text-align: center;
+}
+.book-price {
+    height: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.button-description {
+    border: none;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    text-decoration: underline;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: var(--color-header);
+    cursor: pointer;
+}
+.button-add-to-basket {
+    border: none;
+    border-radius: 90px;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    background-color: var(--color-button);
+    cursor: pointer;
+}
+

@@ -29,7 +29,7 @@ header.append(delivery)
 
 const cart = document.createElement('img')
 cart.src = '../assets/icons/image 4.png'
-cart.classList.add('cart-style')
+cart.classList.add('cart-link')
 header.append(cart)
 
 const inputSearch = document.createElement('input')
@@ -84,15 +84,20 @@ fetch("./books.json")
             bookTitle.innerText = item.title;
             bookCardItem.append(bookTitle);
 
+            const buttonDescription = document.createElement('button')
+            buttonDescription.classList.add('button-description')
+            buttonDescription.innerText = 'Description'
+            bookCardItem.append(buttonDescription)
+
             const bookPrice = document.createElement('h4')
             bookPrice.classList.add('book-price')
             bookPrice.innerText = `price: ${item.price}$`
             bookCardItem.append(bookPrice)
 
-            const buttonDescription = document.createElement('button')
-            buttonDescription.classList.add('button-description')
-            buttonDescription.innerText = 'Description'
-            bookCardItem.append(buttonDescription)
+            const buttonAddToBasket = document.createElement('button')
+            buttonAddToBasket.classList.add('button-add-to-basket')
+            buttonAddToBasket.innerText = 'Add to basket'
+            bookCardItem.append(buttonAddToBasket)
     })
 }
 
