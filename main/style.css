@@ -17,13 +17,6 @@
     font-family:'Lobster Regular' ;
     src: url(../fonts/Lobster-Regular.ttf);
 }
-@font-face {
-    font-family:'ShantellSans Bold' ;
-    font-family:'ShantellSans Regular' ;
-    src: url(../fonts/ShantellSans-Bold.ttf);
-    src: url(../fonts/ShantellSans-Regular.ttf);
-}
-
 :root {
     --color-text:#550D0E;
     --color-card:#E7D6AC;
@@ -37,6 +30,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
+    font-family:'Roboto Regular' ;
+    font-weight: 400;
+    font-size: medium;
+    line-height: 130%;
+    letter-spacing: 0.06em;
     
 }
 .header-style {
@@ -46,7 +44,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-header);
-    
+    font-family:'Lobster Regular' ;
 }
 .header-image {
     width: 240px;
@@ -59,6 +57,7 @@ body {
     color: var(--color-text);
     font-size: 52px;
     font-weight: 400;
+    
 }
 .header-search {
     display: flex;

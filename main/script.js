@@ -91,7 +91,7 @@ fetch("./books.json")
 
             const bookPrice = document.createElement('h4')
             bookPrice.classList.add('book-price')
-            bookPrice.innerText = `price: ${item.price}$`
+            bookPrice.innerText = `Price: ${item.price}$`
             bookCardItem.append(bookPrice)
 
             const buttonAddToBasket = document.createElement('button')
