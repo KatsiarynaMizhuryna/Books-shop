@@ -75,14 +75,14 @@ fetch("./books.json")
             bookCardItem.append(bookImage);
 
             const underline = document.createElement('hr')
-            underline.classList.add('book-underline')
+            underline.classList.add('book-underline');
             bookCardItem.append(underline);
 
             const bookAuthor = document.createElement('h4');
             bookAuthor.classList.add('book-autor');
             bookAuthor.innerText = item.author;
             bookCardItem.append(bookAuthor);
-            ;
+
             const bookTitle = document.createElement('h3');
             bookTitle.classList.add('book-title');
             bookTitle.innerText = item.title;
