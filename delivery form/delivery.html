@@ -9,39 +9,69 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="delivery-header"><h1>Delivery details</h1></div>
+
+        <div class="delivery-header">
+            <img src="../assets/icons/delivery.png" alt="delivery">
+            <h1>Delivery details</h1></div>
+
     <div class="delivery-name">
-        <h3>Full Name</h3>
-            <input type="text">
-            <p>First Name</p>
-            <input type="text">
-            <p>Last Name</p>
+        <div><h3 class="full-name">Full Name</h3></div>
+        <div class="input-name">
+            <div class="input-first"><input type="text">
+                <p>First Name</p>
+            </div>
+            <div class="input-last">
+                <input type="text" >
+                <p>Last Name</p>
+            </div>
+        </div>
     </div>
     <div class= "delivery-address">
-        <h3>Address</h3>
-        <input type="text">
-        <p>Street Address</p>
-        <input type="text">
-        <p>Street Address Line 2</p>
-        <input type="text">
-        <p>City</p>
-        <input type="text">
-        <p>State/Province</p>
-        <input type="text">
-        <p>Postal/Zip Code</p>
-        <input type="text">
-        <p>Country</p>
+        <div class="address"><h3>Address</h3></div>
+            <div class="address-information">
+            <span>
+                <input type="text">
+                <p>Street Address</p>
+            </span>
+            <span>
+                <input type="text">
+                <p>Street Address Line 2</p>
+            </span>
+            <span>
+                <input type="text">
+                <p>City</p>
+            </span>
+            <span>
+                <input type="text">
+                <p>State/Province</p>
+            </span>
+            <span>
+                <input type="text">
+                <p>Postal/Zip Code</p>
+            </span>
+            <span>
+                <input type="text">
+                <p>Country</p>
+            </span>
+        </div>
     </div>
     <div class="delivery-contacts">
-        <h3>Phone Number</h3>
-        <input type="text" placeholder="(000)000-0000">
-        <h3>E-mail</h3>
-        <input type="text" placeholder="example@example.com">
+        <div class="phone-number"><h3>Phone Number</h3>
+            <input type="text" placeholder=" (000) 000-0000">
+        </div>
+        <div class="e-mail">
+            <h3>E-mail</h3>
+        <input type="text" placeholder=" example@example.com">
+        </div>
     </div>
     <div class="delivery-additional">
         <h3>Additional Information</h3>
-        <input type="text">
+        <textarea name="Additional Information" id="Additional" cols="80" rows="10"></textarea>
     </div>
-    </div>
+    <form class="submit" action="/main/script.js">
+        <input class="submit" type="submit" value="Submit">
+    </form>
+</div>
+</div>
 </body>
 </html>

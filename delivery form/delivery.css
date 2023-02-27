@@ -1,0 +1,84 @@
+@font-face {
+    font-family:'Lobster Regular';
+    src: url(../fonts/Lobster-Regular.ttf);}
+@font-face {
+    font-family:'Roboto bold';    
+    font-family:'Roboto Regular' ;
+    src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+:root {
+    --color-text:#550D0E;
+    --color-wrapper:#f3f3c4;
+    --color-submit: #b7b70e;
+    --color-p: #b8b8b8;
+    --color-placeholder:#c5c4c4;
+
+
+}
+body {
+    font-family:'Roboto bold';
+    font-weight: 400;
+    font-size: 16px;
+}
+h1 {
+    font-family:'Lobster Regular' ;
+}
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p {
+    color: var(--color-p)
+}
+::placeholder {
+    color: var(--color-placeholder)
+}
+input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    margin: auto;
+    padding: 40px 40px;
+    width: 1000px;
+    text-align: left;
+    background-color: var(--color-wrapper)
+}
+.delivery-header {
+    display: flex;
+}
+img {
+    width: 50px;
+    height: 40px;
+    margin-right: 15px;
+
+}
+.input-name {
+    display: flex;
+    gap: 20px;
+}
+.address-information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+textarea {
+    margin-bottom: 40px;
+    border: none;
+}
+.submit {
+    width: 200px;
+    background-color: var(--color-submit);
+    font-family:'Roboto Regular' ;
+}
+
