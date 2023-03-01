@@ -44,7 +44,6 @@ body {
     font-size: 16px;
     line-height: 130%;
     letter-spacing: 0.06em;
-    
 }
 .header-style {
     width: 100%;
@@ -66,13 +65,11 @@ body {
     color: var(--color-text);
     font-size: 52px;
     font-weight: 400;
-    
 }
 .header-search {
     display: flex;
     align-items: center;
     margin-right: 40px;
-    
 }
 .input-search {
     width: 300px;
@@ -80,7 +77,6 @@ body {
     border: none;
     outline: none;
 }
-
 .header-button-search {
     width: 40px;
     height: 40px;
@@ -108,7 +104,7 @@ body {
     color: var(--color-text);
     letter-spacing: 0.05em;
 }
-.bookCards-style { 
+.bookCards-style {
     width: auto;
     min-height: 790px;
     margin: 40px 40px;
@@ -133,6 +129,7 @@ body {
 }
 .book-image {
     height: 300px;
+    object-fit: contain;
 }
 .book-autor {
     height: 35px;
@@ -185,4 +182,7 @@ body {
 .button-add-to-basket:hover {
     background-color:var(--color-button-hover);
 }
+
+
+
 
