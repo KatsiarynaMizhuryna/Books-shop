@@ -1,5 +1,13 @@
+@font-face {
+    font-family:'Lobster Regular';
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family:'Roboto Italic';
+    src: url(../fonts/Roboto-Italic.ttf);
+}
 :root {
-   --color-popup:rgb(233, 210, 179, 0.8); 
+   --color-popup:rgb(233, 210, 179, 0.8);
    --color-close: #000;
    --color-popap-item:#f0f8ff;
    }
@@ -38,7 +46,7 @@
     cursor: default;
     }
 .popup-header {
-    font-family: 'Roboto Italic';
+    font-family:'Lobster Regular';
     font-size: 18px;
     text-align: center;
 }
