@@ -1,6 +1,4 @@
 // Header
-document.querySelector('body')
-
 const header = document.createElement('header')
 header.classList.add('header-style')
 document.body.appendChild(header)
@@ -30,7 +28,7 @@ delivery.classList.add('delivery-link')
 header.append(delivery)
 
 const cart = document.createElement('img')
-cart.src = '../assets/icons/image 4.png'
+cart.src = '../assets/icons/add-to-basket.png'
 cart.classList.add('cart-link')
 header.append(cart)
 
@@ -45,9 +43,19 @@ search.append(buttonSearch)
 
 // main
 
+document.querySelector('body')
+const mainWrapper = document.createElement('div')
+mainWrapper.classList.add('main-wrapper')
+document.body.append(mainWrapper)
+
+const catalog = document.createElement('div')
+catalog.classList.add('catalog')
+mainWrapper.append(catalog)
+
+
 const bookCards = document.createElement('ul')
 bookCards.classList.add('bookCards-style')
-document.body.append(bookCards)
+catalog.append(bookCards)
 
 let booksCatalog = []
 
@@ -108,45 +116,3 @@ function createBookCard(array) {
     })
 }
 
-setTimeout(() => {
-    let mod = document.querySelectorAll('.book-card-item')
-    console.log(mod)
-}, 3000);
-
-/*let mod = document.querySelector('.book-card-item')
-
-mod.addEventListener('click',function(event) {
-    if (event.target.classList.contains('button-description')) {
-        showModal
-    }
-})
-function showModal(){
-    const popupWrapper = document.createElement('div')
-    popupWrapper.classList.add('popup-wrapper')
-    document.body.append(popupWrapper)
-
-const popupItem = document.createElement('div')
-    popupItem.classList.add('popup-item')
-    popupWrapper.append(popupItem)
-
-const popupHeader = document.createElement('h3')
-    popupHeader.classList.add('popup-header')
-    //popupHeader.innerText = item.title;
-    popupHeader.innerText = 'booksCatalog[item].title'
-    popupItem.append(popupHeader)
-
-const popupText = document.createElement('p')
-    popupText.classList.add('popup-text')
-   //popupText.innerText = item.description;
-    popupText.innerText =
-    popupItem.append(popupText)
-
-const popupButton = document.createElement('button')
-    popupButton.classList.add('popup-button')
-    popupButton.innerText = 'Close'
-    popupItem.append(popupButton)
-
-}
-setTimeout(() => {
-    console.log(booksCatalog)
-}, 3000);*/

@@ -104,10 +104,18 @@ body {
     color: var(--color-text);
     letter-spacing: 0.05em;
 }
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top:40px; ;
+}
+.catalog {
+    width: 1200px;
+}
 .bookCards-style {
     width: auto;
-    min-height: 790px;
-    margin: 40px 40px;
+    /*min-height: 790px;
+    margin: 40px 40px;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -122,7 +130,8 @@ body {
     flex-direction: column;
     column-gap: 10px;
     background-color: var(--color-header);
-    border: 3px solid var(--color-div)
+    border: 3px solid var(--color-div);
+    border-radius: 13px;
 }
 .book-card-item:hover {
     box-shadow:10px 5px 5px var(--color-shadow);
