@@ -67,18 +67,58 @@ img {
     display: flex;
     gap: 20px;
 }
+.delivery-address {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+.address {
+    height: 40px;
+}
 .address-information {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+.payment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
+}
+.radio-buttons span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.radio {
+    width: 50px;
+    height: 15px;
+}
+.choose-gifts {
+    margin-left: 200px;
+}
+.checkbox-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 450px;
+}
 textarea {
     margin-bottom: 20px;
     border: none;
 }
-.submit {
+.submit button{
     width: 200px;
     background-color: var(--color-submit);
-    font-family:'Roboto Regular' ;
+    font-family: 'Roboto Regular';
+    height: 35px;
+    border: none;
+    border-radius: 3px;
 }
 

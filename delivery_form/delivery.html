@@ -8,68 +8,87 @@
     <link rel="stylesheet" href="delivery.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="delivery-header">
-            <img src="../assets/icons/delivery.png" alt="delivery">
-            <h1>Delivery details</h1></div>
+    <form action="#">
+        <div class="wrapper">
+            <div class="delivery-header">
+                <img src="../assets/icons/delivery.png" alt="delivery">
+                <h1>Delivery details</h1></div>
+        <div class="delivery-name">
+            <div><h3 class="full-name">Full Name</h3></div>
+            <div class="input-name">
+                <div class="input-first"><input type="text" required>
+                    <p>Name</p>
+                </div>
+                <div class="input-last">
+                    <input type="text" required >
+                    <p>Surname</p>
+                </div>
+            </div>
+        </div>
+        <div class= "delivery-address">
+            <div class="address"><h3>Address</h3></div>
+                <div class="address-information">
+                <span>
+                    <input type="text" required>
+                    <p>Street</p>
+                </span>
+                <span>
+                    <input type="text" required>
+                    <p>House number</p>
+                </span>
+                <span>
+                    <input type="text" required>
+                    <p>Flat number</p>
+                </span>
+                <span>
+                    <input type="date" >
+                    <p>Delivery date</p>
+                </span>
+            </div>
+                <div class="payment">
+                    <form>
+                        <h3>Choose the payment type:</h3>
+                        <div class="radio-buttons">
+                            <span><input class="radio" type="radio" id="payment1"
+                                name="payment" checked value="payment">
+                               <label for="payment1">Cash</label></span>
+                            <span><input class="radio" type="radio" id="payment2"
+                                name="payment" value="payment">
+                               <label for="payment2">Card</label></span>
+                        </div>
+                      </form>
+                </div>
 
-    <div class="delivery-name">
-        <div><h3 class="full-name">Full Name</h3></div>
-        <div class="input-name">
-            <div class="input-first"><input type="text">
-                <p>First Name</p>
-            </div>
-            <div class="input-last">
-                <input type="text" >
-                <p>Last Name</p>
-            </div>
+                <div class="choose-gifts">
+                    <form>
+                        <h3>Choose 2 gifts:</h3>
+                        <div class="checkbox-buttons">
+                            <span><input class="radio" type="checkbox" id="gift1"
+                                name="gift" value="gift">
+                               <label for="gift1">Pack as a gift</label></span>
+                            <span><input class="radio" type="checkbox" id="gift2"
+                                name="gift" value="gift">
+                               <label for="gift2">Add postcard</label></span>
+                               <span><input class="radio" type="checkbox" id="gift3"
+                                name="gift" value="gift">
+                               <label for="gift3">Provide 2% discount to the next time</label></span>
+                               <span><input class="radio" type="checkbox" id="gift4"
+                                name="gift" value="gift">
+                               <label for="gift4">Branded pen or pencil</label></span>
+                        </div>
+                      </form>
+                </div>
+           
         </div>
-    </div>
-    <div class= "delivery-address">
-        <div class="address"><h3>Address</h3></div>
-            <div class="address-information">
-            <span>
-                <input type="text">
-                <p>Street Address</p>
-            </span>
-            <span>
-                <input type="text">
-                <p>Street Address Line 2</p>
-            </span>
-            <span>
-                <input type="text">
-                <p>City</p>
-            </span>
-            <span>
-                <input type="text">
-                <p>State/Province</p>
-            </span>
-            <span>
-                <input type="text">
-                <p>Postal/Zip Code</p>
-            </span>
-            <span>
-                <input type="text">
-                <p>Country</p>
-            </span>
+        <div class="delivery-additional">
+            <h3>Additional Information</h3>
+            <textarea name="Additional Information" id="Additional" cols="80" rows="10"></textarea>
         </div>
-    </div>
-    <div class="delivery-contacts">
-        <div class="phone-number"><h3>Phone Number</h3>
-            <input type="text" placeholder=" (000) 000-0000">
-        </div>
-        <div class="e-mail">
-            <h3>E-mail</h3>
-        <input type="text" placeholder=" example@example.com">
-        </div>
-    </div>
-    <div class="delivery-additional">
-        <h3>Additional Information</h3>
-        <textarea name="Additional Information" id="Additional" cols="80" rows="10"></textarea>
-    </div>
-    <form class="submit" action="/main/script.js">
-        <input class="submit" type="submit" value="Submit">
+        <form class="submit" action="#">
+            <button type="submit">Complete</button>
+        </form>
     </form>
+    
 </div>
 </div>
 </body>
