@@ -1,24 +1,18 @@
 window.addEventListener('dragstart', function(event) {
     if (event.target.classList.contains('book-card-item')) {
-        let dragItem = event.target;
-        console.log(dragItem)
-        dragItem.classList.add('book-dragging');
+        event.target.classList.add('book-dragging');
     }
     if (event.target.classList.contains('book-image')) {
-        let dragItem = event.target.parentElement;
-        console.log(dragItem)
-        dragItem.classList.add('book-dragging');
+        event.target.parentElement.classList.add('book-dragging');
     }
 });
 
 window.addEventListener('dragend', function(event) {
     if (event.target.classList.contains('book-card-item')) {
-        let dragItem = event.target;
-        dragItem.classList.remove('book-dragging');
+        event.target.classList.remove('book-dragging');
     }
     if (event.target.classList.contains('book-image')) {
-        let dragItem = event.target.parentElement;
-        dragItem.classList.remove('book-dragging');
+        event.target.parentElement.classList.remove('book-dragging');
     }
 });
 

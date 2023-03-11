@@ -8,18 +8,18 @@ const basketBody = document.createElement('div')
 basketBody.classList.add('basket-body')
 basketWrapper.append(basketBody)
 basketBody.innerHTML = `
-<div class="basket">
-            <div class="basket-header">
-                <img class="basket-image" src="../assets/icons/shopping-bag.png"" alt="add-to-basket">
-                <h1 class="total-items">Your basket: (0 items)</h1>
-                <br>
-                <h2 class="total">Total: 0 $</h2>
-                </div>
-                <hr>
-            <div class="basket-items">
-            </div>
+    <div class="basket">
+        <div class="basket-header">
+            <img class="basket-image" src="../assets/icons/shopping-bag.png" alt="add-to-basket">
+            <h1 class="total-items">Your basket: (0 items)</h1>
+            <br>
+            <h2 class="total">Total: 0 $</h2>
+        </div>
+        <hr>
+        <div class="basket-items">
+        </div>
             <div class="basket-footer">
-            <a href="../delivery_form/delivery.html" class="checkout-button">Checkout</a>
+                <a href="../order/delivery.html" class="checkout-button">Checkout</a>
             </div>
         </div>
     </div>
