@@ -1,5 +1,4 @@
 //create basket form
-document.querySelector('body')
 const basketWrapper = document.createElement('div')
 basketWrapper.classList.add('basket-wrapper')
 mainWrapper.append(basketWrapper)
@@ -31,15 +30,14 @@ window.addEventListener('click',function(event){
     if (event.target.classList.contains('button-add-to-basket')) {
         renderCards (event)
     }
-event.preventDefault()
+    //event.preventDefault() // TODO: check if required
 })
 
 function renderCards(event) {
-    let data
     if (event.type === 'click') {
-        data = event.target.closest('.book-card-item')
+        data = event.target.closest('.book-card-item');
     } else if (event.type === 'drop') {
-        data = document.querySelector('.book-dragging')
+        data = document.querySelector('.book-dragging');
     }
     const bookInfo = {
         id: data.dataset.id,
