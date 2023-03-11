@@ -8,45 +8,47 @@
     <link rel="stylesheet" href="delivery.css">
 </head>
 <body>
-    <form action="#">
-        <div class="wrapper">
+    <div class="wrapper">
+    <form action="#" id="form">
             <div class="delivery-header">
                 <img src="../assets/icons/delivery.png" alt="delivery">
                 <h1>Delivery details</h1></div>
         <div class="delivery-name">
             <div><h3 class="full-name">Full Name</h3></div>
             <div class="input-name">
-                <div class="input-first"><input type="text" required>
-                    <p>Name</p>
+                <div class="input-first">
+                    <input class = "name" type="text" name="name" required>
+                    <label for="house">Name*</label>
                 </div>
                 <div class="input-last">
-                    <input type="text" required >
-                    <p>Surname</p>
+                    <input class = "surname" type="text" name="surname" required>
+                    <label for="surname">Surname*</label>
                 </div>
             </div>
         </div>
         <div class= "delivery-address">
-            <div class="address"><h3>Address</h3></div>
+            <div class="address">
+                <h3>Address</h3>
+            </div>
                 <div class="address-information">
                 <span>
-                    <input type="text" required>
-                    <p>Street</p>
+                    <input class="street"  type="text" name="street" required>
+                    <label for="street">Street*</label>
                 </span>
                 <span>
-                    <input type="text" required>
-                    <p>House number</p>
+                    <input class = "house" type="text" name="house" required>
+                    <label for="house">House number*</label>
                 </span>
                 <span>
-                    <input type="text" required>
-                    <p>Flat number</p>
+                    <input class= "flat" type="text"  name="flat" required>
+                    <label for="flat">Flat number*</label>
                 </span>
                 <span>
-                    <input type="date" >
-                    <p>Delivery date</p>
+                    <input class = "date" type="date" name="date" required>
+                    <label for="date">Delivery date*</label>
                 </span>
             </div>
                 <div class="payment">
-                    <form>
                         <h3>Choose the payment type:</h3>
                         <div class="radio-buttons">
                             <span><input class="radio" type="radio" id="payment1"
@@ -56,40 +58,36 @@
                                 name="payment" value="payment">
                                <label for="payment2">Card</label></span>
                         </div>
-                      </form>
-                </div>
-
+                    </div>
                 <div class="choose-gifts">
-                    <form>
                         <h3>Choose 2 gifts:</h3>
                         <div class="checkbox-buttons">
-                            <span><input class="radio" type="checkbox" id="gift1"
-                                name="gift" value="gift">
-                               <label for="gift1">Pack as a gift</label></span>
-                            <span><input class="radio" type="checkbox" id="gift2"
-                                name="gift" value="gift">
-                               <label for="gift2">Add postcard</label></span>
-                               <span><input class="radio" type="checkbox" id="gift3"
-                                name="gift" value="gift">
-                               <label for="gift3">Provide 2% discount to the next time</label></span>
-                               <span><input class="radio" type="checkbox" id="gift4"
-                                name="gift" value="gift">
-                               <label for="gift4">Branded pen or pencil</label></span>
+                            <span>
+                                <input class="radio" type="checkbox" id="gift1" name="gift" onchange="setCheckBoxes()">
+                                <label for="gift1">Pack as a gift</label>
+                            </span>
+                            <span>
+                                <input class="radio" type="checkbox" id="gift2" name="gift" onchange="setCheckBoxes()">
+                                <label for="gift2">Add postcard</label></span>
+                            <span>
+                                <input class="radio" type="checkbox" id="gift3" name="gift" onchange="setCheckBoxes()">
+                                <label for="gift3">Provide 2% discount to the next time</label></span>
+                            <span>
+                                <input class="radio" type="checkbox" id="gift4" name="gift" onchange="setCheckBoxes()">
+                                <label for="gift4">Branded pen or pencil</label>
+                            </span>
                         </div>
-                      </form>
+                    </div>
                 </div>
-           
-        </div>
-        <div class="delivery-additional">
-            <h3>Additional Information</h3>
+            <div class="delivery-additional">
+                <h3>Additional Information</h3>
             <textarea name="Additional Information" id="Additional" cols="80" rows="10"></textarea>
         </div>
-        <form class="submit" action="#">
-            <button type="submit">Complete</button>
-        </form>
-    </form>
-    
+        <div class="submit">
+            <button type="submit" disabled="true" id="submit">Complete</button>
+        </div>
+</form>
 </div>
-</div>
+<script src="./delivery.js"></script>
 </body>
 </html>
