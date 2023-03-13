@@ -17,10 +17,12 @@
             <div><h3 class="full-name">Full Name</h3></div>
             <div class="input-name">
                 <div class="input-first">
+                    <div class="invalid"></div>
                     <input class = "name" type="text" name="name" required>
                     <label for="house">Name*</label>
                 </div>
                 <div class="input-last">
+                    <div class="invalid"></div>
                     <input class = "surname" type="text" name="surname" required>
                     <label for="surname">Surname*</label>
                 </div>
@@ -32,18 +34,22 @@
             </div>
                 <div class="address-information">
                 <span>
+                    <div class="invalid"></div>
                     <input class="street"  type="text" name="street" required>
                     <label for="street">Street*</label>
                 </span>
                 <span>
+                    <div class="invalid"></div>
                     <input class = "house" type="text" name="house" required>
                     <label for="house">House number*</label>
                 </span>
                 <span>
+                    <div class="invalid"></div>
                     <input class= "flat" type="text"  name="flat" required>
                     <label for="flat">Flat number*</label>
                 </span>
                 <span>
+                    <div class="invalid"></div>
                     <input class = "date" type="date" name="date" required>
                     <label for="date">Delivery date*</label>
                 </span>
@@ -85,6 +91,9 @@
         </div>
         <div class="submit">
             <button type="submit" disabled="true" id="submit">Complete</button>
+        </div>
+        <div class="summarizedPopup popup-close">
+            <div class="summarizedPopup-content"></div>
         </div>
 </form>
 </div>

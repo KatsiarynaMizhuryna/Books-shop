@@ -23,6 +23,7 @@ window.addEventListener('dragover', function(event) {
 window.addEventListener('drop', function(event) {
     if (event.target.classList.contains('basket-wrapper') ||
         event.target.parentElement.classList.contains('basket-contains')) {
+            console.log(event.target.parentElement)
         renderCards(event)
     }
 });

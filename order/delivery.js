@@ -49,15 +49,18 @@ function enableSend(){
     }
 }
 
+
 function looseFocus(element){
     if(validateInput(element)){
         element.setAttribute('class', 'success');
+        element.previousElementSibling.textContent = null;
     } else {
         element.setAttribute('class', 'error');
+        element.previousElementSibling.textContent = 'The field is invalid.';
     }
+
     enableSend();
 }
-
 function setCheckBoxes(){
     let checkBoxes = document.getElementById('form').querySelectorAll('input[type=checkbox]')
     let checkBoxState = {true: [], false: []}
@@ -76,3 +79,27 @@ function setCheckBoxes(){
         });
     }
 }
+let submitButton = document.getElementById('submit')
+submitButton.addEventListener('click',summarizedInformation)
+
+function summarizedInformation(event){
+  event.preventDefault()
+  let info = {}
+  info.name = form.querySelector('[name="name"]').value
+  info.surname = form.querySelector('[name="surname"]').value
+  info.street = form.querySelector('[name="street"]').value
+  info.house = form.querySelector('[name="house"]').value
+  info.flat = form.querySelector('[name="flat"]').value
+  info.date = form.querySelector('[name="date"]').value
+  const summarizedPopup = document.querySelector('.summarizedPopup')
+  summarizedPopup.classList.add('popup-open')
+  const summarizedPopupContent = document.querySelector('.summarizedPopup-content')
+  summarizedPopupContent.innerHTML =
+     `<h2>Thank you for your order!</h2>
+     <p><strong>The delivery address is:</strong>  ${info.street + ' ' + info.house+ '/' + info.flat}</p>
+     <p><strong>Customer:</strong>  ${info.name + ' ' + info.surname}</p>
+     <p><strong>Delivery date</strong>:  ${info.date}</p>
+     <button>&times<button>`
+     console.log(values, summarizedPopupContent)
+}
+
