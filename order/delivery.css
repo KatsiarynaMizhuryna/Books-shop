@@ -2,10 +2,12 @@
     font-family:'Lobster Regular';
     src: url(../fonts/Lobster-Regular.ttf);}
 @font-face {
-    font-family:'Roboto bold';    
+    font-family:'Roboto bold';
     font-family:'Roboto Regular' ;
+    font-family:'Roboto Italic';
     src: url(../fonts/Roboto-Bold.ttf);
     src: url(../fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Italic.ttf);
 }
 :root {
     --color-text:#550D0E;
@@ -29,16 +31,12 @@ h3 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-::placeholder {
-    color: var(--color-placeholder)
-}
 input {
     width: 300px;
     height: 30px;
     border: none;
     cursor: pointer;
 }
-
 .wrapper {
     margin: auto;
     padding: 40px 40px;
@@ -53,7 +51,6 @@ img {
     width: 50px;
     height: 40px;
     margin-right: 15px;
-
 }
 .input-name {
     display: flex;
@@ -74,7 +71,6 @@ img {
 }
 .name:focus, .surname:focus, .street:focus, .house:focus, .flat:focus, .date:focus {
     outline: 0;
-
 }
 .address-information span, .payment, .radio-buttons, .input-first, .input-last {
     display: flex;
@@ -119,4 +115,69 @@ textarea {
 }
 .success {
     box-shadow: 0 0 15px green;
+}
+.invalid {
+    color: red;
+    height: 10px;
+}
+.popup-close {
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    }
+.popup-open {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(233, 210, 179, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+.popup-open h2 {
+    font-family:'Lobster Regular';
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.popup-open p {
+    font-family:'Roboto Italic';
+    font-size: 20px;
+    text-align: left;
+    }
+.popup-open button {
+    width: 30px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    color: var(--color-close);
+    background: transparent;
+    position: absolute;
+    top: 300px;
+    right: 570px;
+}
+.summarizedPopup-content {
+    width: 650px;
+    height: 350px;
+    margin: auto;
+    padding: 50px 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
