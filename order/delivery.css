@@ -7,19 +7,16 @@
     src: url(../fonts/Roboto-Bold.ttf);
     src: url(../fonts/Roboto-Regular.ttf);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-
 :root {
     --color-text:#550D0E;
     --color-wrapper:#f3f3c4;
     --color-submit: #b7b70e;
-    /*--color-p: #b8b8b8;*/
     --color-placeholder:#c5c4c4;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
 body {
     font-family:'Roboto bold';
     font-weight: 400;

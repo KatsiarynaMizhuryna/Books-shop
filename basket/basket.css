@@ -1,6 +1,9 @@
+:root {
+  --color-basket:#dccccc;
+}
 .basket-wrapper {
     width: 450px;
-    background-color: rgb(168, 142, 142);
+    background-color: var(--color-basket);
     border-radius: 19px;
     min-height: 500px;
 }
@@ -51,6 +54,8 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-left: 15px;
+    width: 200px;
   }
   .basket-items {
     width: 400px;
@@ -72,9 +77,6 @@
   .add-name-to-basket {
     text-align: center;
   }
-  .add-price-to-basket {
-
-  }
   .counter-value {
     width: 30px;
     border: none;
@@ -84,12 +86,11 @@
     border: none;
     width: 50px;
     cursor: pointer;
-
   }
   .checkout-button {
     visibility: hidden;
   }
-  .checkout-button_active {
+  .checkout-button-active {
     visibility: visible;
     border: none;
     color: black;

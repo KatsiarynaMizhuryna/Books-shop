@@ -7,9 +7,8 @@ const basketBody = document.createElement('div')
 basketBody.classList.add('basket-body')
 basketWrapper.append(basketBody)
 basketBody.innerHTML = `
-    <div class="basket">
         <div class="basket-header">
-            <img class="basket-image" src="../assets/icons/shopping-bag.png" alt="add-to-basket">
+            <img class="basket-image" src="../assets/icons/shopping-bag.png" alt="add-to-basket" draggable="false">
             <h1 class="total-items">Your basket: (0 items)</h1>
             <br>
             <h2 class="total">Total: 0 $</h2>
@@ -18,10 +17,9 @@ basketBody.innerHTML = `
         <div class="basket-items">
         </div>
             <div class="basket-footer">
-                <a href="../order/delivery.html" class="checkout-button">Checkout</a>
+                <a href="../order/delivery.html" class="checkout-button" draggable="false">Checkout</a>
             </div>
         </div>
-    </div>
     `
 const basketItems = document.querySelector('.basket-items')
 const basketTotal = document.querySelector('.basket-footer')
@@ -90,9 +88,9 @@ function toggleBasketStatus () {
     const basketEmptyBadge = document.querySelector('.checkout-button');
     //const deliveryForm = document.querySelector('#order-form');
     if (basketItems.children.length > 0) {
-        basketEmptyBadge.classList.add('checkout-button_active')
+        basketEmptyBadge.classList.add('checkout-button-active')
     }else {
-        basketEmptyBadge.classList.remove('checkout-button_active')
+        basketEmptyBadge.classList.remove('checkout-button-active')
     }
 }
 

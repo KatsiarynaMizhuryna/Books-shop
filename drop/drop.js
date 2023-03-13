@@ -22,7 +22,7 @@ window.addEventListener('dragover', function(event) {
 
 window.addEventListener('drop', function(event) {
     if (event.target.classList.contains('basket-wrapper') ||
-        event.target.classList.contains('basket-items')) {
+        event.target.parentElement.classList.contains('basket-contains')) {
         renderCards(event)
     }
 });
