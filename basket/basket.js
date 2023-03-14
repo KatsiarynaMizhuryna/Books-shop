@@ -35,7 +35,7 @@ function renderCards(event) {
     if (event.type === 'click') {
         data = event.target.closest('.book-card-item');
     } else if (event.type === 'drop') {
-        data = document.querySelector('.book-dragging');
+        data = document.querySelector(`[data-id="${event.dataTransfer.getData('text')}"]`) //data = document.querySelector('.book-dragging');
     }
     const bookInfo = {
         id: data.dataset.id,
@@ -47,7 +47,7 @@ function renderCards(event) {
     //render items in basket
     const bookItemHTML = `
     <div class="basket-contains" data-id = "${bookInfo.id}">
-        <div><img class="add-image-to-basket" src="${bookInfo.imgSrc}" alt=" "></div>
+        <div><img class="add-image-to-basket" src="${bookInfo.imgSrc}" alt=" " draggable="false"></div>
         <div class="basket-content">
             <div>
                 <h3 class="add-name-to-basket">${bookInfo.author}</h3>

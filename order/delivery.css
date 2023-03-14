@@ -14,6 +14,10 @@
     --color-wrapper:#f3f3c4;
     --color-submit: #b7b70e;
     --color-placeholder:#c5c4c4;
+    --color-error: #ff0000;
+    --color-success: #008000;
+    --color-modal: rgb(233, 210, 179, 0.8);
+    --color-modal-content:#fff;
 }
 * {
     margin: 0;
@@ -36,13 +40,14 @@ input {
     height: 30px;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
 }
 .wrapper {
     margin: auto;
     padding: 40px 40px;
     width: 1000px;
     text-align: left;
-    background-color: var(--color-wrapper)
+    background-color: var(--color-wrapper);
 }
 .delivery-header {
     display: flex;
@@ -111,13 +116,13 @@ textarea {
     border-radius: 3px;
 }
 .error {
-    box-shadow: 0 0 15px red;
+    box-shadow: 0 0 15px var(--color-error);
 }
 .success {
-    box-shadow: 0 0 15px green;
+    box-shadow: 0 0 15px var(--color-success);
 }
 .invalid {
-    color: red;
+    color: var(--color-error);
     height: 10px;
 }
 .popup-close {
@@ -140,7 +145,7 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgb(233, 210, 179, 0.8);
+    background-color:var(--color-modal);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -174,7 +179,7 @@ textarea {
     height: 350px;
     margin: auto;
     padding: 50px 50px;
-    background-color: #fff;
+    background-color: var(--color-modal-content);
     border-radius: 15px;
     opacity: 1;
     display: flex;

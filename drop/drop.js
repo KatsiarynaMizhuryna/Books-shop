@@ -1,29 +1,42 @@
-window.addEventListener('dragstart', function(event) {
+/*let cardItems = document.getElementsByClassName('book-card-item');
+let bookImages = document.getElementsByClassName('book-image');
+
+
+for(let i = 0; i < bookImages.length; i++){
+    bookImages[i].addEventListener('dragstart', function(event) {
+        event.stopImmediatePropagation();
+        event.target.parentElement.classList.add('book-dragging');
+        event.dataTransfer.setData('text', event.target.parentElement.dataset.id); // set card id
+    });
+    bookImages[i].addEventListener('dragend', function(event) {
+        event.target.parentElement.classList.remove('book-dragging');
+    });
+}*/
+
+window.addEventListener('dragstart', (event) => {
     if (event.target.classList.contains('book-card-item')) {
         event.target.classList.add('book-dragging');
-    }
-    if (event.target.classList.contains('book-image')) {
+        event.dataTransfer.setData('text', event.target.dataset.id); // set card id
+    } else if (event.target.classList.contains('book-image')) {
         event.target.parentElement.classList.add('book-dragging');
+        event.dataTransfer.setData('text', event.target.parentElement.dataset.id); // set card id
     }
 });
 
-window.addEventListener('dragend', function(event) {
+window.addEventListener('dragend', (event) => {
     if (event.target.classList.contains('book-card-item')) {
         event.target.classList.remove('book-dragging');
-    }
-    if (event.target.classList.contains('book-image')) {
+    } else if (event.target.classList.contains('book-image')) {
         event.target.parentElement.classList.remove('book-dragging');
     }
 });
 
-window.addEventListener('dragover', function(event) {
-        event.preventDefault();
+basketWrapper.addEventListener('dragover', (event) => {
+    event.preventDefault();
 });
 
-window.addEventListener('drop', function(event) {
-    if (event.target.classList.contains('basket-wrapper') ||
-        event.target.parentElement.classList.contains('basket-contains')) {
-            console.log(event.target.parentElement)
-        renderCards(event)
-    }
+basketWrapper.addEventListener('drop', (event) => {
+    //event.preventDefault();
+    //event.stopPropagation();
+    renderCards(event)
 });

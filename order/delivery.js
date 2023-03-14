@@ -79,6 +79,7 @@ function setCheckBoxes(){
         });
     }
 }
+
 let submitButton = document.getElementById('submit')
 submitButton.addEventListener('click',summarizedInformation)
 
@@ -95,7 +96,7 @@ function summarizedInformation(event){
   summarizedPopup.classList.add('popup-open')
   const summarizedPopupContent = document.querySelector('.summarizedPopup-content')
   summarizedPopupContent.innerHTML =
-     `<h2>Thank you for your order!</h2>
+     `<h2>Thank you for shopping with us!</h2>
      <p><strong>The delivery address is:</strong>  ${info.street + ' ' + info.house+ '/' + info.flat}</p>
      <p><strong>Customer:</strong>  ${info.name + ' ' + info.surname}</p>
      <p><strong>Delivery date</strong>:  ${info.date}</p>
