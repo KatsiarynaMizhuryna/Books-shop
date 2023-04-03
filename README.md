@@ -1,1 +1,1 @@
-https://katsiarynamizhuryna.github.io/Books-shop/main/index.html
+https://katsiarynamizhuryna.github.io/Books-shop/main/
