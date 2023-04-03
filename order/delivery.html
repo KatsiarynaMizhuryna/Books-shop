@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <link rel="stylesheet" href="delivery.css">
+</head>
+<body>
+    <div class="wrapper">
+    <form action="#" id="form">
+            <div class="delivery-header">
+                <img src="../assets/icons/delivery.png" alt="delivery">
+                <h1>Delivery details</h1></div>
+        <div class="delivery-name">
+            <div><h3 class="full-name">Full Name</h3></div>
+            <div class="input-name">
+                <div class="input-first">
+                    <div class="invalid"></div>
+                    <input class = "name" type="text" name="name" required>
+                    <label for="house">Name*</label>
+                </div>
+                <div class="input-last">
+                    <div class="invalid"></div>
+                    <input class = "surname" type="text" name="surname" required>
+                    <label for="surname">Surname*</label>
+                </div>
+            </div>
+        </div>
+        <div class= "delivery-address">
+            <div class="address">
+                <h3>Address</h3>
+            </div>
+                <div class="address-information">
+                <span>
+                    <div class="invalid"></div>
+                    <input class="street"  type="text" name="street" required>
+                    <label for="street">Street*</label>
+                </span>
+                <span>
+                    <div class="invalid"></div>
+                    <input class = "house" type="text" name="house" required>
+                    <label for="house">House number*</label>
+                </span>
+                <span>
+                    <div class="invalid"></div>
+                    <input class= "flat" type="text"  name="flat" required>
+                    <label for="flat">Flat number*</label>
+                </span>
+                <span>
+                    <div class="invalid"></div>
+                    <input class = "date" type="date" name="date" required>
+                    <label for="date">Delivery date*</label>
+                </span>
+            </div>
+                <div class="payment">
+                        <h3>Choose the payment type:</h3>
+                        <div class="radio-buttons">
+                            <span><input class="radio" type="radio" id="payment1"
+                                name="payment" checked value="payment">
+                               <label for="payment1">Cash</label></span>
+                            <span><input class="radio" type="radio" id="payment2"
+                                name="payment" value="payment">
+                               <label for="payment2">Card</label></span>
+                        </div>
+                    </div>
+                <div class="choose-gifts">
+                        <h3>Choose 2 gifts:</h3>
+                        <div class="checkbox-buttons">
+                            <span>
+                                <input class="radio" type="checkbox" id="gift1" name="gift" onchange="setCheckBoxes()">
+                                <label for="gift1">Pack as a gift</label>
+                            </span>
+                            <span>
+                                <input class="radio" type="checkbox" id="gift2" name="gift" onchange="setCheckBoxes()">
+                                <label for="gift2">Add postcard</label></span>
+                            <span>
+                                <input class="radio" type="checkbox" id="gift3" name="gift" onchange="setCheckBoxes()">
+                                <label for="gift3">Provide 2% discount to the next time</label></span>
+                            <span>
+                                <input class="radio" type="checkbox" id="gift4" name="gift" onchange="setCheckBoxes()">
+                                <label for="gift4">Branded pen or pencil</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            <div class="delivery-additional">
+                <h3>Additional Information</h3>
+            <textarea name="Additional Information" id="Additional" cols="80" rows="10"></textarea>
+        </div>
+        <div class="submit">
+            <button type="submit" disabled="true" id="submit">Complete</button>
+        </div>
+        <div class="summarizedPopup popup-close">
+            <div class="summarizedPopup-content"></div>
+        </div>
+</form>
+</div>
+<script src="delivery.js"></script>
+</body>
+</html>

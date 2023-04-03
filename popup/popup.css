@@ -1,0 +1,70 @@
+@font-face {
+    font-family:'Lobster Regular';
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family:'Roboto Italic';
+    src: url(../fonts/Roboto-Italic.ttf);
+}
+:root {
+   --color-popup:rgb(233, 210, 179, 0.8);
+   --color-close: #000;
+   --color-popap-item:#f0f8ff;
+   }
+
+.popup-close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-popup);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    }
+.popup-open {
+    opacity: 1;
+    visibility: visible;
+}
+.popup-item {
+    position: relative;
+    border-radius: 10px;
+    width: 650px;
+    min-height: 300px;
+    max-height: 90%;
+    overflow-y: auto;
+    padding: 30px 20px;
+    background-color: var(--color-popap-item);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: default;
+    }
+.popup-header {
+    font-family:'Lobster Regular';
+    font-size: 18px;
+    text-align: center;
+}
+.popup-text {
+    font-family: 'Roboto Italic';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align:justify;
+
+}
+.popup-button {
+    width: 30px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    color: var(--color-close);
+    background: transparent;
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
