@@ -186,3 +186,8 @@ textarea {
     flex-direction: column;
     justify-content: center;
 }
+.summarizedPopup-content strong {
+    color: var(--color-text) ;
+    text-decoration: underline;
+    border-bottom: 2px solid var(--color-text);
+}
